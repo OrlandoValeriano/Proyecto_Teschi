@@ -10,13 +10,60 @@
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/styles/inicio.css">
+    <link rel="stylesheet" href="assets/styles/login.css">
 </head>
 
 <body>
-    <!-- ===================== MAIN ======================= -->
+    <!-- ===================== HEADER ======================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">TES<span>Chi</span></a>
 
-    
+            <div class="nav__menu" id="nav-meni">
+                <a href="inicio.html" class="nav__btn-back" id="nav-btn-back">
+                    <i class="ri-arrow-left-circle-line"></i>
+                    Regresar</a>
+            </div>
+        </nav>
+    </header>
+    <!-- ===================== MAIN ======================= -->
+    <main class="main">
+        <!-- ===================== LOGIN ======================= -->
+        <section class="login section" id="login">
+            <img src="assets/img/home_bg.jpg" alt="login image" class="login__bg">
+            <div class="login__shadow"></div>
+            <div class="login__container container">
+                <form action="" class="login__form">
+                    <div class="login__container-register flex">
+                        <h4 class="login__not-account">¿No tienes una cuenta?</h4>
+                        <a href="" class="login__register">Registrate</a>
+                    </div>
+                    <div class="login__container-signin flex">
+                        <h2 class="login__subtitle">Inicio de Sesión</h2>
+                        <div class="login__box-txt">
+                            <i class="ri-user-6-line">
+                            </i>
+                            <input type="text" name="" id="" class="login__matricula txt">
+                        </div>
+                        <div class="login__box-txt">
+                            <i class="ri-lock-password-line"></i>
+                            <input type="password" name="" id="" class="login__password txt">
+                        </div>
+                        <button type="submit" class="login__btn-login">Iniciar Sesión</button>
+                    </div>
+                    <div class="login__remember flex">
+                        <input type="checkbox" name="" id="" class="login__check">
+                        <span>Recuerdame</span>
+                    </div>
+                    <div class="login__forgot-account flex">
+                        <h4 class="login__forgot">¿Olvidaste tú contraseña?</h4>
+                        <a href="" class="login__recover">Recuperar</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
