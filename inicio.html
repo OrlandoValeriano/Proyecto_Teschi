@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/styles/inicio.css">
+</head>
+
+<body>
+    <!--==================== HEADER =======================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">TES<span>Chi</span></a>
+
+            <div class="nav__login" id="nav-login">
+                <a href="login.html" class="nav__btn-login" id="nav-btn-login">
+                    <i class="ri-login-box-line"></i>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--==================== MAIN =======================-->
+    <main class="main">
+        <!-- ================= HOME ================ -->
+        <section class="home section" id="home">
+            <img src="assets/img/home_bg.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">Bienvenido a la plataforma de</h3>
+                    <h1 class="home__title">
+                        Servicio Social y Residencias Profesionales
+                    </h1>
+                    <p class="home__description">
+                        Estimado(a) alumno(a), aquí podrás gestionar y dar seguimiento a todos los documentos y pasos
+                        necesarios para completar los procedimientos de Servicio Social y Residencias Profesionales.
+                        Asegúrate de seguir las indicaciones del departamento y mantener la información actualizada.
+                    </p>
+                </div>
+            </div>
+            <div class="home__cards grid">
+                <article class="home__card">
+                    <i class="ri-scales-fill"></i>
+                    <h3 class="home__card-title">Marco Jurídico</h3>
+                </article>
+                <article class="home__card">
+                    <i class="ri-file-text-fill"></i>
+                    <h3 class="home__card-title">Formatos de Servicio Social</h3>
+                </article>
+                <article class="home__card">
+                    <i class="ri-building-4-fill"></i>
+                    <h3 class="home__card-title">Formatos de Residencias Profesionales</h3>
+                </article>
+                <article class="home__card">
+                    <i class="ri-service-fill"></i>
+                    <h3 class="home__card-title">Convenios</h3>
+                </article>
+                <article class="home__card">
+                    <i class="ri-megaphone-fill"></i>
+                    <h3 class="home__card-title">Convocatorias</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--==================== MODAL WINDOW =======================-->
+    <dialog class="modal__container" id="modal-information">
+        <div class="modal__title-container">
+            <h2 class="modal__title">Convocatorias Actuales</h2>
+        </div>
+        <div class="modal__information-container">
+            <article class="modal__card">
+                <h3 class="modal__subtitle">Servicio Social</h3>
+                <p class="modal__description">
+                    No hay convocatorias disponibles para Servicio Social.
+                </p>
+            </article>
+            <article class="modal__card">
+                <h3 class="modal__subtitle">Residencias Profesionales</h3>
+                <p class="modal__description">
+                    No hay convocatorias disponibles para Residencias Profesionales.
+                </p>
+            </article>
+        </div>
+        <div class="modal__button">
+            <button class="modal__close" id="modal-close">Cerrar</button>
+        </div>
+    </dialog>
+    <!--==================== FOOTER =======================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="" class="footer__logo">TES<span>Chi</span></a>
+                </div>
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">Sobre nosotros</h3>
+                        <p class="footer__description">
+                            Departamento de Servicio Social y Residencias Profesionales del Tecnológico de Estudios
+                            Superiores de Chimalhuacán.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Dirección</h3>
+                        <p class="footer__description">
+                            Primavera s/n Col. Sta María Nativitas
+                            Chimalhuacán Estado de México.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Teléfonos</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">55-58-53-72-93</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">55-58-52-74-26</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Email</h3>
+                        <a href="mailto:serviciosocial@teschi.edu.mx"" class=" footer__email">
+                            serviciosocial@teschi.edu.mx
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__group">
+                <div class="footer__icons">
+                    <img src="assets/img/icons.png" alt="logos image">
+                </div>
+                <span class="footer__copy">&#169; Copyright Orlandiux. All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!--===================== SCROLL UP =====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--===================== SCROLLREVEAL ===================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--================ MAIN JS ======================-->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
