@@ -32,38 +32,90 @@
         <section class="login section" id="login">
             <img src="assets/img/home_bg.jpg" alt="login image" class="login__bg">
             <div class="login__shadow"></div>
-            <div class="login__container container">
-                <form action="" class="login__form">
-                    <div class="login__container-register flex">
-                        <h4 class="login__not-account">¿No tienes una cuenta?</h4>
-                        <a href="" class="login__register">Registrate</a>
-                    </div>
-                    <div class="login__container-signin flex">
-                        <h2 class="login__subtitle">Inicio de Sesión</h2>
-                        <div class="login__box-txt">
-                            <i class="ri-user-6-line">
-                            </i>
-                            <input type="text" name="" id="" class="login__matricula txt">
+            <div class="form__container-lr">
+                <div class="login__container container" id="login-container">
+                    <form action="" class="login__form">
+                        <div class="login__container-register flex">
+                            <h4 class="login__not-account">¿No tienes una cuenta?</h4>
+                            <a href="#" class="login__register" id="login-register">Registrate</a>
                         </div>
-                        <div class="login__box-txt">
-                            <i class="ri-lock-password-line"></i>
-                            <input type="password" name="" id="" class="login__password txt">
+                        <div class="login__container-signin flex">
+                            <h2 class="login__subtitle">Inicio de Sesión</h2>
+                            <div class="login__box-txt">
+                                <i class="ri-user-6-line">
+                                </i>
+                                <input type="text" name="" id="" class="login__matricula txt" placeholder="Matrícula">
+                            </div>
+                            <div class="login__box-txt">
+                                <i class="ri-lock-password-line"></i>
+                                <input type="password" name="" id="" class="login__password txt"
+                                    placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="login__btn-login">Iniciar Sesión</button>
                         </div>
-                        <button type="submit" class="login__btn-login">Iniciar Sesión</button>
-                    </div>
-                    <div class="login__remember flex">
-                        <input type="checkbox" name="" id="" class="login__check">
-                        <span>Recuerdame</span>
-                    </div>
-                    <div class="login__forgot-account flex">
-                        <h4 class="login__forgot">¿Olvidaste tú contraseña?</h4>
-                        <a href="" class="login__recover">Recuperar</a>
-                    </div>
-                </form>
+                        <div class="login__remember flex">
+                            <input type="checkbox" name="" id="" class="login__check">
+                            <span>Recuerdame</span>
+                        </div>
+                        <div class="login__forgot-account flex">
+                            <h4 class="login__forgot">¿Olvidaste tú contraseña?</h4>
+                            <a href="" class="login__recover">Recuperar</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- ===================== REGISTER ======================= -->
+                <div class="register__container container" id="register-container">
+                    <form action="" class="register__form">
+                        <div class="register__container-signup flex">
+                            <h2 class="register__subtitle">Registro de Usuario</h2>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="text" name="" id="" class="register__matricula txt"
+                                    placeholder="Matrícula">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="text" name="" id="" class="register__nombre txt"
+                                    placeholder="Nombre(s)">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="text" name="" id="" class="register__apaterno txt"
+                                    placeholder="Apellido Paterno">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="text" name="" id="" class="register__amaterno txt"
+                                    placeholder="Apellido Materno">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="date" name="" id="" class="register__calendar txt">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-user-6-line"></i>
+                                <input type="email" name="" id="" class="register__email txt"
+                                    placeholder="Correo Personal">
+                            </div>
+                            <div class="register__box-txt">
+                                <i class="ri-lock-password-line"></i>
+                                <input type="password" name="" id="" class="register__password txt"
+                                    placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="register__btn-register">Registrarse</button>
+                        </div>
+                        <div class="register__have-account flex">
+                            <h4 class="register__have">¿Ya tienes una cuenta?</h4>
+                            <a href="#" class="register__signin" id="register-login">Iniciar Sesión</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>

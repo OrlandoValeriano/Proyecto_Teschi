@@ -76,13 +76,14 @@
     background-color: #187a4c;
 }
 
-/* ================== LOGIN ===================== */
+/* ================== LOGIN AND REGISTER ===================== */
 .login {
-    height: 100vh;
     position: relative;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .login__bg {
@@ -102,14 +103,21 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(transparent, rgba(0,0,0,.2));
+    background: linear-gradient(transparent, rgba(0, 0, 0, .5));
+}
+
+.form__container-lr {
+    position: relative;
 }
 
 .login__container {
     position: relative;
+    left: 0;
+    transition: left 1s ease-in-out;
 }
 
-.login__form {
+.login__form,
+.register__form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,23 +155,27 @@
     width: 100%;
 }
 
-.login__container-signin {
+.login__container-signin,
+.register__container-signup {
     flex-direction: column;
     gap: 15px;
 }
 
-.login__subtitle {
+.login__subtitle,
+.register__subtitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
-.login__box-txt {
+.login__box-txt,
+.register__box-txt {
     width: 100%;
     position: relative;
 }
 
-.login__container-signin>div>i{
+.login__container-signin>div>i,
+.register__container-signup>div>i {
     color: #187a4c;
     position: absolute;
     top: 50%;
@@ -171,7 +183,12 @@
     left: 15px;
 }
 
-.login__btn-login {
+.txt::placeholder {
+    color: #dddddd;
+}
+
+.login__btn-login,
+.register__btn-register {
     background-color: #187a4c;
     color: var(--body-color);
     border: none;
@@ -182,7 +199,8 @@
     transition: background-color .4s ease-in-out;
 }
 
-.login__btn-login:hover {
+.login__btn-login:hover,
+.register__btn-register:hover {
     background-color: #1e8d59;
 }
 
@@ -194,20 +212,24 @@
     padding: 0 5px;
 }
 
-.login__forgot-account {
+.login__forgot-account,
+.register__have-account {
     gap: 20px;
 }
 
-.login__recover {
+.login__recover,
+.register__signin {
     position: relative;
     color: var(--body-color);
 }
 
-.login__recover:hover {
+.login__recover:hover,
+.register__signin:hover {
     color: #2bc27c;
 }
 
-.login__recover::after {
+.login__recover::after,
+.register__signin::after {
     content: '';
     width: 0;
     height: 2px;
@@ -219,9 +241,48 @@
     transition: width .4s ease-in-out;
 }
 
-.login__recover:hover::after {
+.login__recover:hover::after,
+.register__signin:hover::after {
     width: 100%;
 }
 
+/* ================== REGISTER ===================== */
+.register__container {
+    max-width: 100%;
+    position: absolute;
+    top: -50%;
+    transform: translateX(1000%);
+    opacity: 0;
+    transition: opacity 2s ease-in-out,
+        transform .8s ease-in-out;
+}
 
+.register__btn-register {
+    margin-bottom: 20px;
+}
 
+/* ================== EVENTS ===================== */
+.show-register {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.remove-login {
+    left: -1000%;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 63%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 52%);
+}
