@@ -234,6 +234,10 @@ body{
         transform .8s ease-in-out;
 }
 
+.register__calendar{
+    padding-right: 15px;
+}
+
 /*=============== FOOTER ===============*/
 .footer {
     z-index: 20;
