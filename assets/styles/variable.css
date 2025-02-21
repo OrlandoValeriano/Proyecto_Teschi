@@ -44,10 +44,12 @@ html {
 
 body,
 button,
-input {
+input,
+option{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--text-color);
+    text-overflow: ellipsis;
 }
 
 body {
@@ -79,6 +81,14 @@ img {
 
 button {
     cursor: pointer;
+}
+
+select {
+    height: 100%;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ================= REUSABLE CSS CLASSES ================== */

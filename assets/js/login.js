@@ -1,9 +1,17 @@
+/*=============== ADD BLUR TO HEADER ===============*/
+const blurHeader = () => {
+    const header = document.getElementById('header');
+    this.scrollY >= 50 ? header.classList.add('blur-header')
+    : header.classList.remove('blur-header');
+}
+
+window.addEventListener('scroll', blurHeader);
 
 /*=============== SHOW REGISTER ===============*/
 const register = document.getElementById('login-register'),
-      registerContainer = document.getElementById('register-container'),
-      login = document.getElementById('register-login'),
-      loginContainer = document.getElementById('login-container');
+    registerContainer = document.getElementById('register-form'),
+    login = document.getElementById('register-login'),
+    loginContainer = document.getElementById('login-form');
 
 register.addEventListener('click', () => {
     registerContainer.classList.add('show-register');
@@ -24,4 +32,4 @@ const sr = ScrollReveal({
     // reset: true // Animation repeat
 });
 
-sr.reveal('.login__container');
+sr.reveal('.login__container, .footer__container');
